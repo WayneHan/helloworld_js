@@ -1,4 +1,4 @@
-var  http = require('http');    //require node.js自带的http模块
+var http = require('http');    //require node.js自带的http模块
 var url = require("url");
 
 function start(route){
@@ -8,7 +8,7 @@ function start(route){
 
         route(pathname);
 
-        response.writeHead(200,{'Content-Type': 'text/plain'});
+        response.writeHead(200, {'Content-Type': 'text/plain'});
         response.write('helloworld');
         response.end();
     }
